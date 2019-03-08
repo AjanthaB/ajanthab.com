@@ -1,3 +1,15 @@
 .App {
+  /* text-align: center; */
+}
+
+.section-header {
+  left: 10px;
+  margin-left: 10px;
+  font-weight: 800;
+  font-size: 18px;
+  margin-bottom: 0;
+}
+
+.content {
   text-align: center;
 }

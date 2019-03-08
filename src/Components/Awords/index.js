@@ -1,10 +1,11 @@
 import React from 'react';
+import './index.css';
 
-class Certification extends React.Component {
+class Awords extends React.Component {
   constructor() {
     super();
     this.state = {
-      certifications: [
+      awords: [
         { id: Math.random(), topic: "MEAN Stack", text: "discription" },
         { id: Math.random(), topic: "MERN Stack", text: "discription" },
         { id: Math.random(), topic: "PWA Apps", text: "discription" },
@@ -12,12 +13,12 @@ class Certification extends React.Component {
     }
   }
 
-  getCertificate = (work) => {
+  getAwords = (aword) => {
     return (
-      <div key={work.id} className="col-md-4 col-sm-6 col-xs-12 work">
-        <div className="work-wrapper">
-          <span>{work.topic}</span>
-          <p>{work.text}</p>
+      <div key={aword.id} className="col-md-4 col-sm-6 col-xs-12 aword">
+        <div className="aword-wrapper">
+          <span>{aword.topic}</span>
+          <p>{aword.text}</p>
         </div>
       </div>
     )
@@ -25,19 +26,19 @@ class Certification extends React.Component {
 
   render() {
     return (
-      <div className="bt-row works">
+      <div className="bt-row awords">
         <div className="col-xs-12">
           <div className="bt-row">
             <div className="col-xs-12">
-              <h4 className="section-header">Work</h4>
+              <h4 className="section-header">Awords</h4>
             </div>
             <div className="col-xs-12 content">
-              <h2 className="content-topic">Certifications</h2>
+              <h2 className="content-topic">Awords</h2>
             </div>
             <div className="col-xs-2"></div>
             <div className="col-xs-8">
               <div className="bt-row">
-                {this.state.certifications.map(work => this.getCertificate(work))}
+                {this.state.awords.map(aword => this.getAwords(aword))}
               </div>
             </div>
             <div className="col-xs-2"></div>
@@ -48,4 +49,4 @@ class Certification extends React.Component {
   }
 }
 
-export default Certification;
+export default Awords;

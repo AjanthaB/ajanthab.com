@@ -9,6 +9,7 @@ import Experinace from './Components/Experiance';
 import Education from './Components/Education';
 import Portfolio from './Components/Portforlio';
 import Contact from './Components/Contacts';
+import Awords from './Components/Awords';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <About />
         <Works />
         <Certification />
+        <Awords />
         <Experinace />
         <Education />
         <Portfolio />
