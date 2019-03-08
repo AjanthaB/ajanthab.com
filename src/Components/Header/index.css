@@ -1,0 +1,29 @@
+.header {
+  height: 60px;
+  background-color: #222831;
+  color: #eeeeee;
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 800;
+  position: absolute;
+  left: 40px;
+  top: 25%;
+  cursor: pointer;
+}
+
+.h-right,
+.h-left {
+  position: relative;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 10%;
+  float: right;
+  right: 40px;
+  background-color: #222831;
+  border: none;
+  color: #eee;
+}
